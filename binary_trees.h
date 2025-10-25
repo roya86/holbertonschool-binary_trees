@@ -7,11 +7,12 @@
 
 /**
  * struct binary_tree_s - Binary tree node
- *
  * @n: Integer stored in the node
  * @parent: Pointer to the parent node
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
+ *
+ * Description: Binary tree node structure
  */
 struct binary_tree_s
 {
@@ -23,17 +24,13 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 
-/* Function prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
-binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(const binary_tree_t *node);
 int binary_tree_is_root(const binary_tree_t *node);
-void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int)); /* ✅ تمت إضافتها هنا */
-
-/* Print function (provided) */
-void binary_tree_print(const binary_tree_t *);
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_print(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
 
