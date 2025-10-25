@@ -31,6 +31,9 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 /* Task 2: Insert right child */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 
+/* Task 3: Delete entire tree */
+void binary_tree_delete(binary_tree_t *tree);
+
 /* Helper: Print the tree */
 void binary_tree_print(const binary_tree_t *tree);
 
